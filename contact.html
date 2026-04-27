@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | JS Traders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="JS Traders Logo" class="logo-img">
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for bespoke solutions</p>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <section class="contact-page" style="padding: 100px 0 0 0;">
+        <div class="container contact-layout">
+
+            <div class="contact-details">
+                <h2 class="section-title">Visit Our Showroom</h2>
+                <p style="margin-bottom: 40px; font-size: 1.1rem; color: var(--text-muted);">Experience the touch of
+                    luxury. Our dedicated style consultants are ready to assist you in bringing your ultimate dream
+                    sanctuary to life.</p>
+
+                <ul class="contact-info-large">
+                    <li>
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h4>Location</h4>
+                            <p>63/E9, TB Rd, near Hassini water company, LIG Colony, Old Pet, Krishnagiri, Tamil Nadu
+                                635001</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h4>Call Us</h4>
+                            <p>+91 98650 71335<br>Mon-Sat, 9AM to 8PM</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div class="text">
+                            <h4>Service Options</h4>
+                            <p>Repair Services & Same-day Delivery Available</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <h3 style="margin-bottom: 30px; font-size: 1.8rem; font-family: var(--font-heading);">Send a Message
+                    </h3>
+
+                    <div class="input-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Inquiry Type</label>
+                        <select required>
+                            <option>Bulk Order / Project</option>
+                            <option>Residential Remodel</option>
+                            <option>Partnership/B2B</option>
+                            <option>General Support</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Submit Inquiry</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <img src="logo.png" alt="JS Traders Logo" class="logo-img">
+                </a>
+                <p class="footer-desc">Premium sanitaryware suppliers specializing in luxury bathroom fixtures and
+                    ceramics for residential and commercial spaces worldwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-houzz"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 63/E9, TB Rd, Krishnagiri, TN 635001</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 98650 71335</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@jstraders.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 JS Traders. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

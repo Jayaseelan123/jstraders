@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | JS Traders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="JS Traders Logo" class="logo-img">
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-title">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Premium sanitaryware collections for your dream sanctuary</p>
+        </div>
+    </div>
+
+    <!-- Products Gallery -->
+    <section class="products-gallery" style="padding: 80px 0;">
+        <div class="container">
+
+            <!-- 1. Faucets & Showers -->
+            <div class="product-section" style="margin-bottom: 60px;">
+                <h2 class="section-title"
+                    style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">1.
+                    Faucets & Showers</h2>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div class="gallery-item">
+                        <img src="images/show.png" alt="Precision Faucet">
+                        <div class="gallery-overlay">
+                            <h4>Modern Mixer</h4>
+                            <p>Chrome Finish</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/show2.png" alt="Rain Shower">
+                        <div class="gallery-overlay">
+                            <h4>Rain Shower System</h4>
+                            <p>Thermostatic Control</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1615529151169-7b1ff50dc7f2?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Black Faucet">
+                        <div class="gallery-overlay">
+                            <h4>Matte Black Faucet</h4>
+                            <p>Minimalist Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Premium Ceramics -->
+            <div class="product-section" style="margin-bottom: 60px;">
+                <h2 class="section-title"
+                    style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">2.
+                    Premium Ceramics</h2>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Sculpted Washbasin">
+                        <div class="gallery-overlay">
+                            <h4>Vessel Sink</h4>
+                            <p>Italian Ceramic</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1507652313519-d45101a05638?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Wall-hung Basin">
+                        <div class="gallery-overlay">
+                            <h4>Countertop Basin</h4>
+                            <p>Glossy White</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1523413555809-0fb8a4a2c746?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Designer Toilet">
+                        <div class="gallery-overlay">
+                            <h4>Rimless WC</h4>
+                            <p>Wall-Hung Luxury</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Bathtubs & Wellness -->
+            <div class="product-section" style="margin-bottom: 60px;">
+                <h2 class="section-title"
+                    style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">3.
+                    Bathtubs & Wellness</h2>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18efc2297?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Freestanding Tub">
+                        <div class="gallery-overlay">
+                            <h4>Oval Stone Tub</h4>
+                            <p>Freestanding Luxury</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Corner Tub">
+                        <div class="gallery-overlay">
+                            <h4>Modern Alcove Tub</h4>
+                            <p>Acrylic Finish</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Wellness Spa">
+                        <div class="gallery-overlay">
+                            <h4>Whirlpool System</h4>
+                            <p>Hydrotherapy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Smart Toilets -->
+            <div class="product-section" style="margin-bottom: 60px;">
+                <h2 class="section-title"
+                    style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">4.
+                    Smart Toilets</h2>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Intelligent Toilet">
+                        <div class="gallery-overlay">
+                            <h4>Neo Smart WC</h4>
+                            <p>Auto-Flush & Bidet</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1564540583246-93440702c283?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Digital Toilet">
+                        <div class="gallery-overlay">
+                            <h4>Digital Hygiene Suite</h4>
+                            <p>Seat Warming</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Integrated Bidet">
+                        <div class="gallery-overlay">
+                            <h4>Compact Smart WC</h4>
+                            <p>Remote Control</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Luxury Vanities -->
+            <div class="product-section" style="margin-bottom: 60px;">
+                <h2 class="section-title"
+                    style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">5.
+                    Luxury Vanities</h2>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1609115792942-88fb695c06fe?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Modern Vanity">
+                        <div class="gallery-overlay">
+                            <h4>Double Vanity</h4>
+                            <p>Oak & Marble</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1595844737604-58535492f15e?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Sleek Vanity">
+                        <div class="gallery-overlay">
+                            <h4>Floating Vanity</h4>
+                            <p>Minimalist Walnut</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Designer Vanity">
+                        <div class="gallery-overlay">
+                            <h4>Contemporary Vanity</h4>
+                            <p>Quartz Top</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Bathroom Accessories -->
+            <div class="product-section" style="margin-bottom: 60px;">
+                <h2 class="section-title"
+                    style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">6.
+                    Bathroom Accessories</h2>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1616464916356-3a408c9dd3d6?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Accessory Set">
+                        <div class="gallery-overlay">
+                            <h4>Chrome Accents</h4>
+                            <p>Towel Rails & Hooks</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Mirror">
+                        <div class="gallery-overlay">
+                            <h4>LED Smart Mirror</h4>
+                            <p>Anti-Fog Technology</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1603511029894-720cd24317b9?auto=format&fit=crop&w=800&h=450&q=80"
+                            alt="Shelving">
+                        <div class="gallery-overlay">
+                            <h4>Glass Shelving</h4>
+                            <p>Modern Storage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <img src="logo.png" alt="JS Traders Logo" class="logo-img">
+                </a>
+                <p class="footer-desc">Premium sanitaryware suppliers specializing in luxury bathroom fixtures and
+                    ceramics for residential and commercial spaces worldwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-houzz"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 63/E9, TB Rd, Krishnagiri, TN 635001</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 98650 71335</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@jstraders.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 JS Traders. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
