@@ -23,23 +23,35 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="collections.html">Collections</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Products <i class="fa-solid fa-chevron-down"
+                                style="font-size: 0.7rem; margin-left: 5px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faucets.html">Faucets & Showers</a></li>
+                            <li><a href="ceramics.html">Premium Ceramics</a></li>
+                            <li><a href="bathtubs.html">Bathtubs & Wellness</a></li>
+                            <li><a href="smart-toilets.html">Smart Toilets</a></li>
+                            <li><a href="vanities.html">Luxury Vanities</a></li>
+                            <li><a href="accessories.html">Bathroom Accessories</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="page-title">
+    <div class="page-title"
+        style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container">
             <h1>Premium Ceramics</h1>
             <p>Artistic washbasins and sanitaryware for elegant spaces</p>
         </div>
     </div>
 
-    <section class="products-gallery" style="padding: 80px 0;">
+    <section class="products-gallery" style="padding: 100px 0 60px;">
         <div class="container">
-            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
                 <div class="gallery-item">
                     <img src="images/sink.png" alt="Vessel Sink">
                     <div class="gallery-overlay">
@@ -61,22 +73,101 @@
                         <p>Wall-Hung Luxury</p>
                     </div>
                 </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18efc2297?auto=format&fit=crop&w=800&h=800&q=80"
+                        alt="Designer Pedestal">
+                    <div class="gallery-overlay">
+                        <h4>Sculpted Pedestal</h4>
+                        <p>Monolithic Design</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&h=800&q=80"
+                        alt="Marble Sink">
+                    <div class="gallery-overlay">
+                        <h4>Carrara Basin</h4>
+                        <p>Natural Stone Look</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&h=800&q=80"
+                        alt="Matte WC">
+                    <div class="gallery-overlay">
+                        <h4>Matte Grey WC</h4>
+                        <p>Modern Minimalism</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer same as above -->
+    <!-- Features Section -->
+    <section class="ceramic-features" style="background-color: var(--bg-card); padding: 100px 0;">
+        <div class="container">
+            <div class="section-header text-center">
+                <h4 class="section-subtitle">THE CERAMIC ART</h4>
+                <h2 class="section-title">Purity in Every Curve</h2>
+            </div>
+            <div class="services-grid" style="margin-top: 60px;">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Nano-Glaze Tech</h3>
+                    <p>Our ceramics are fired at 1280°C with an ultra-smooth Nano-glaze that prevents dirt from sticking, ensuring a permanent shine.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+                    <h3>High Pressure Cast</h3>
+                    <p>Unlike standard ceramics, our pieces are high-pressure cast to eliminate internal air pockets, resulting in 30% higher impact resistance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                    <h3>Stain Resistance</h3>
+                    <p>The non-porous surface is resistant to chemical agents and acidic cleaners, maintaining its pristine white finish for decades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glazing Spotlight -->
+    <section class="glazing-spotlight" style="padding: 120px 0;">
+        <div class="container about-container">
+            <div class="about-text">
+                <h4 class="section-subtitle">VITREOUS CHINA</h4>
+                <h2 class="section-title">The Secret to Longevity</h2>
+                <p>JS Traders ceramics are crafted using premium Vitreous China, a material known for its incredible strength and low water absorption rate (below 0.5%). This makes our washbasins and WCs the most hygienic choice for your home.</p>
+                <p>Every piece undergoes a multi-stage inspection process to ensure there are no ripples, pinholes, or unevenness in the glaze, providing you with a product that is practically a work of art.</p>
+                <ul class="project-details" style="margin-top: 30px;">
+                    <li><strong>Material:</strong> Premium Vitreous China</li>
+                    <li><strong>Firing:</strong> 1280°C High-Temp Kiln</li>
+                    <li><strong>Absorption:</strong> Less than 0.5%</li>
+                </ul>
+            </div>
+            <div class="about-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=80" alt="Ceramic Detail" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col">
                 <a href="index.html" class="logo footer-logo"><img src="logo.png" alt="JS Traders Logo"
                         class="logo-img"></a>
-                <p class="footer-desc">Premium sanitaryware suppliers specializing in luxury bathroom fixtures.</p>
+                <p class="footer-desc">Premium sanitaryware suppliers specializing in luxury bathroom fixtures and
+                    ceramics for residential and commercial spaces worldwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-houzz"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collections.html">Collections</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -86,6 +177,7 @@
                 <ul class="contact-info">
                     <li><i class="fa-solid fa-location-dot"></i> 63/E9, TB Rd, Krishnagiri, TN 635001</li>
                     <li><i class="fa-solid fa-phone"></i> +91 98650 71335</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@jstraders.com</li>
                 </ul>
             </div>
         </div>

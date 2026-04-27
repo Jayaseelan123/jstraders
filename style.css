@@ -288,6 +288,71 @@ ul {
     width: 100%;
 }
 
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background-color: #ffffff;
+    min-width: 500px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: var(--primary-color) !important;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+    border-bottom: none;
+    border-radius: 8px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--accent-light);
+    color: var(--secondary-color) !important;
+    padding-left: 25px;
+}
+
+.dropdown-menu li a::after {
+    display: none;
+}
+
+/* For scrolled header - ensure dropdown items remain readable */
+.header.scrolled .dropdown-menu {
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 .nav-links li a:hover {
     color: var(--secondary-color);
 }
@@ -1101,6 +1166,21 @@ ul {
 
     .hero-subtitle {
         font-size: 1rem;
+    }
+}
+
+/* Mobile Adjustments for Dropdown Grid */
+@media (max-width: 992px) {
+    .dropdown-menu {
+        min-width: 100% !important;
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        display: none; /* Controlled by JS */
+    }
+    
+    .dropdown.active .dropdown-menu {
+        display: block !important;
     }
 }
 

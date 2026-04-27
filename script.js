@@ -26,10 +26,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close menu when clicking a link on mobile
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.style.overflow = 'auto';
+        link.addEventListener('click', (e) => {
+            // If it's a dropdown link and we are on mobile, handle differently
+            if (window.innerWidth <= 992 && link.parentElement.classList.contains('dropdown')) {
+                // Check if we clicked the chevron or the link itself
+                // For better UX, we'll let the link work but allow toggling
+                // However, usually on mobile you want the dropdown to open
+                const dropdownMenu = link.nextElementSibling;
+                if (dropdownMenu && dropdownMenu.classList.contains('dropdown-menu')) {
+                    // Only prevent default if we want to toggle the menu instead of navigating
+                    // Let's make it so clicking the arrow/text toggles on mobile
+                    // But if it's already open, it navigates? 
+                    // Simpler: just toggle it and let user click again to navigate if they want
+                    // Or better: clicking once opens, clicking again navigates.
+                }
+            }
+            
+            if (!link.parentElement.classList.contains('dropdown')) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+
+    // Mobile Dropdown Toggle Logic
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('a');
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                const menu = dropdown.querySelector('.dropdown-menu');
+                if (menu) {
+                    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+                    menu.style.opacity = '1';
+                    menu.style.visibility = 'visible';
+                    menu.style.position = 'static';
+                    menu.style.transform = 'none';
+                    menu.style.boxShadow = 'none';
+                    menu.style.padding = '10px 20px';
+                }
+            }
         });
     });
 
