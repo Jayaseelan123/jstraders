@@ -94,16 +94,30 @@ document.addEventListener('DOMContentLoaded', () => {
         '.service-card', 
         '.about-img', 
         '.section-title', 
+        '.section-subtitle',
+        '.about-text',
         '.gallery-item', 
         '.contact-info-large li', 
         '.input-group',
-        '.project-details li'
+        '.project-details li',
+        '.btn',
+        '.footer-col',
+        '.page-title h1',
+        '.page-title p',
+        '.video-container'
     ];
 
     animateTargets.forEach(selector => {
         const elements = document.querySelectorAll(selector);
         elements.forEach((el, index) => {
-            el.classList.add('reveal-hidden');
+            // Apply different initial states based on element type or class
+            if (el.classList.contains('about-img') && el.closest('.about-container').style.flexDirection === 'row-reverse') {
+                el.classList.add('reveal-right');
+            } else if (el.classList.contains('about-img')) {
+                el.classList.add('reveal-left');
+            } else {
+                el.classList.add('reveal-hidden');
+            }
             
             // Allow for staggered delays dynamically within grids/lists
             if (index % 3 === 1) el.classList.add('delay-1');

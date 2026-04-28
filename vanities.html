@@ -42,114 +42,88 @@
     </header>
 
     <div class="page-title"
-        style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1609115792942-88fb695c06fe?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80') center/cover;">
         <div class="container">
             <h1>Luxury Vanities</h1>
-            <p>Bespoke storage solutions for the modern bathroom</p>
+            <p>Bespoke cabinetry for the sophisticated bathroom</p>
         </div>
     </div>
 
-    <section class="products-gallery" style="padding: 100px 0 60px;">
+    <!-- Featured Products (Content Style) -->
+
+    <!-- Product 1 -->
+    <section class="product-feature" style="padding: 120px 0;">
+        <div class="container about-container">
+            <div class="about-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1609115792942-88fb695c06fe?auto=format&fit=crop&w=1000&q=80" alt="Double Vanity" class="about-img">
+            </div>
+            <div class="about-text">
+                <h4 class="section-subtitle">MASTER SUITE LUXURY</h4>
+                <h2 class="section-title">Royal Oak Double Vanity</h2>
+                <p>Crafted from sustainably sourced European Oak, this double vanity offers the perfect balance of symmetry and storage. Featuring a hand-polished Carrara marble top.</p>
+                <p>Equipped with German-engineered soft-close drawer systems and integrated LED lighting for a seamless and premium morning ritual.</p>
+                <ul class="project-details" style="margin-top: 20px;">
+                    <li><strong>Material:</strong> Solid European Oak</li>
+                    <li><strong>Top:</strong> Authentic Carrara Marble</li>
+                    <li><strong>Hardware:</strong> Blum Soft-Close Systems</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 2 -->
+    <section class="product-feature" style="padding: 120px 0; background-color: var(--bg-card);">
+        <div class="container about-container" style="flex-direction: row-reverse;">
+            <div class="about-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1595844737604-58535492f15e?auto=format&fit=crop&w=1000&q=80" alt="Floating Vanity" class="about-img">
+            </div>
+            <div class="about-text">
+                <h4 class="section-subtitle">MINIMALIST ARCHITECTURE</h4>
+                <h2 class="section-title">Walnut Floating Suite</h2>
+                <p>Maximize your floor space with our Walnut Floating Suite. This wall-mounted unit creates a sense of lightness and modern sophistication in any environment.</p>
+                <p>The rich, dark grains of natural Walnut are paired with a matte charcoal quartz top for a contrast that is both bold and timeless.</p>
+                <ul class="project-details" style="margin-top: 20px;">
+                    <li><strong>Style:</strong> Wall-Mounted Floating</li>
+                    <li><strong>Wood:</strong> Natural Walnut Grain</li>
+                    <li><strong>Top:</strong> Industrial Matte Quartz</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" style="padding: 100px 0; background-color: var(--bg-card);">
         <div class="container">
-            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1609115792942-88fb695c06fe?auto=format&fit=crop&w=800&h=800&q=80"
-                        alt="Double Vanity">
+            <div class="section-header text-center" style="margin-bottom: 60px;">
+                <h4 class="section-subtitle">VANITY GALLERY</h4>
+                <h2 class="section-title" style="font-size: 4.5rem;">Bespoke Inspiration</h2>
+            </div>
+            <div class="gallery-grid" style="grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));">
+                <div class="gallery-item reveal-hidden">
+                    <img src="https://images.unsplash.com/photo-1609115792942-88fb695c06fe?auto=format&fit=crop&w=800&h=450&q=80" alt="Modern Vanity">
                     <div class="gallery-overlay">
                         <h4>Double Vanity</h4>
                         <p>Oak & Marble</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1595844737604-58535492f15e?auto=format&fit=crop&w=800&h=800&q=80"
-                        alt="Sleek Vanity">
+                <div class="gallery-item reveal-hidden delay-1">
+                    <img src="https://images.unsplash.com/photo-1595844737604-58535492f15e?auto=format&fit=crop&w=800&h=450&q=80" alt="Sleek Vanity">
                     <div class="gallery-overlay">
                         <h4>Floating Vanity</h4>
                         <p>Minimalist Walnut</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&h=800&q=80"
-                        alt="Designer Vanity">
+                <div class="gallery-item reveal-hidden delay-2">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&h=450&q=80" alt="Designer Vanity">
                     <div class="gallery-overlay">
                         <h4>Contemporary Vanity</h4>
                         <p>Quartz Top</p>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1584622781564-1d9876a13d00?auto=format&fit=crop&w=800&h=800&q=80"
-                        alt="Single Vanity">
-                    <div class="gallery-overlay">
-                        <h4>Compact Vanity</h4>
-                        <p>Matte Grey Finish</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&h=800&q=80"
-                        alt="Marble Vanity">
-                    <div class="gallery-overlay">
-                        <h4>Italian Marble Suite</h4>
-                        <p>Bespoke Carving</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=800&h=800&q=80"
-                        alt="Rustic Vanity">
-                    <div class="gallery-overlay">
-                        <h4>Rustic Teak Vanity</h4>
-                        <p>Natural Wood Texture</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="vanity-features" style="background-color: var(--bg-card); padding: 100px 0;">
-        <div class="container">
-            <div class="section-header text-center">
-                <h4 class="section-subtitle">ELEGANT ORGANIZATION</h4>
-                <h2 class="section-title">Where Form Meets Function</h2>
-            </div>
-            <div class="services-grid" style="margin-top: 60px;">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-gem"></i></div>
-                    <h3>Premium Countertops</h3>
-                    <p>We use only the finest Carrara marble, industrial quartz, and reinforced glass for countertops that are as durable as they are beautiful.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-box-open"></i></div>
-                    <h3>Smart Storage</h3>
-                    <p>Integrated drawer organizers, soft-close hinges, and hidden compartments ensure your bathroom remains clutter-free.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3>Moisture Resistance</h3>
-                    <p>Every wooden component is treated with marine-grade sealants to withstand high humidity and prevent warping over time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Materials Spotlight -->
-    <section class="materials-spotlight" style="padding: 120px 0;">
-        <div class="container about-container">
-            <div class="about-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80" alt="Vanity Detail" class="about-img">
-            </div>
-            <div class="about-text">
-                <h4 class="section-subtitle">THE ART OF WOOD & STONE</h4>
-                <h2 class="section-title">Authentic Materials, Timeless Design</h2>
-                <p>Our vanities are crafted from sustainably sourced hardwoods including Teak, Oak, and Walnut. Each piece of wood is hand-selected for its grain pattern and structural integrity.</p>
-                <p>Paired with master-carved stone basins and metallic accents in brushed gold or matte black, our vanities serve as the centerpieces of high-end bathroom architecture.</p>
-                <ul class="project-details" style="margin-top: 30px;">
-                    <li><strong>Wood Type:</strong> Sustainably Sourced Hardwoods</li>
-                    <li><strong>Hardware:</strong> German-Engineered Soft Close</li>
-                    <li><strong>Top:</strong> Zero-Stain Quartz & Marble</li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
