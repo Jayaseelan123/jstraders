@@ -1285,7 +1285,14 @@ ul {
     z-index: 0;
 }
 
-/* Responsive Overrides */
+/* --- COMPREHENSIVE RESPONSIVE SYSTEM --- */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
 @media (max-width: 992px) {
     .process-grid::before {
         display: none;
@@ -1293,24 +1300,38 @@ ul {
 
     .about-container,
     .featured-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 50px !important;
     }
 
-    .featured-image {
+    .featured-image, .about-image-wrapper {
         order: -1;
     }
 
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .services-grid, .gallery-grid, .stats-grid, .process-grid, .specs-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
     }
 
     .hero-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .dropdown-menu {
+        min-width: 100% !important;
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block !important;
     }
 }
 
@@ -1345,12 +1366,30 @@ ul {
     }
 
     .menu-toggle {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle {
         display: flex;
     }
 
     .menu-toggle.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-        background-color: #fff !important;
+        transform: translateY(9px) rotate(45deg);
+        background-color: #fff;
     }
 
     .menu-toggle.active .bar:nth-child(2) {
@@ -1358,63 +1397,75 @@ ul {
     }
 
     .menu-toggle.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-        background-color: #fff !important;
+        transform: translateY(-9px) rotate(-45deg);
+        background-color: #fff;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
+    .services-grid, .gallery-grid, .process-grid, .stats-grid, .specs-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .partners-grid {
+        gap: 40px !important;
     }
 
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 50px;
+        text-align: center;
+    }
+
+    .contact-info li {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     .hero-title {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .marquee-track {
+        animation-duration: 20s !important;
+    }
+
+    .excellence-card {
+        width: 300px !important;
+        height: 400px !important;
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-300px * 4 - 30px * 4)); }
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .container {
-        padding: 0 20px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
+        padding: 0 15px;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
-    }
-}
-
-/* Mobile Adjustments for Dropdown Grid */
-@media (max-width: 992px) {
-    .dropdown-menu {
-        min-width: 100% !important;
-        grid-template-columns: 1fr !important;
-        gap: 0 !important;
-        padding: 0 !important;
-        display: none;
-        /* Controlled by JS */
+        font-size: 0.95rem;
     }
 
-    .dropdown.active .dropdown-menu {
-        display: block !important;
+    .btn {
+        width: 100%;
+        padding: 15px 30px;
     }
 }
 
