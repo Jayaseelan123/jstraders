@@ -1381,7 +1381,7 @@ ul {
 
     .dropdown-menu li a {
         font-size: 1.1rem !important;
-        color: #ffffff !important;
+        color: var(--secondary-color) !important;
         padding: 10px 0 !important;
     }
 
