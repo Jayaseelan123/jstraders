@@ -62,6 +62,7 @@
 
     </section>
 
+
     <!-- Core Collections Teaser -->
     <section class="explore" id="explore">
         <div class="container">
@@ -71,36 +72,36 @@
             </div>
             <div class="services-grid">
                 <!-- Highlight 1 -->
-                <div class="service-card">
+                <div class="service-card hover-lift">
                     <div class="service-icon">
                         <i class="fa-solid fa-droplet"></i>
                     </div>
                     <h3>Precision Faucets</h3>
                     <p>Minimalist, eco-friendly brassware engineered to deliver high-performance water flow in
                         flawless chrome and matte finishes.</p>
-                    <a href="collections.html" class="service-link">Explore Faucets <i
+                    <a href="faucets.html" class="service-link">Explore Faucets <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <!-- Highlight 2 -->
-                <div class="service-card">
+                <div class="service-card hover-lift">
                     <div class="service-icon">
                         <i class="fa-regular fa-clone"></i>
                     </div>
                     <h3>Curated Ceramics</h3>
                     <p>Wall-hung and floor-standing water closets designed with rimless technology for superior
                         hygiene and geometric beauty.</p>
-                    <a href="collections.html" class="service-link">Explore Ceramics <i
+                    <a href="ceramics.html" class="service-link">Explore Ceramics <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <!-- Highlight 3 -->
-                <div class="service-card">
+                <div class="service-card hover-lift">
                     <div class="service-icon">
                         <i class="fa-solid fa-hot-tub-person"></i>
                     </div>
                     <h3>Wellness Systems</h3>
                     <p>Immerse yourself in tranquility with our freestanding stone bathtubs and high-pressure
                         therapeutic rain shower systems.</p>
-                    <a href="collections.html" class="service-link">Explore Wellness <i
+                    <a href="bathtubs.html" class="service-link">Explore Wellness <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
@@ -110,8 +111,56 @@
         </div>
     </section>
 
+    <!-- Visual Category Gallery -->
+    <section class="gallery-section" style="padding: 120px 0;">
+        <div class="container">
+            <div class="section-header text-center" style="margin-bottom: 60px;">
+                <h4 class="section-subtitle">OUR COLLECTIONS</h4>
+                <h2 class="section-title">Visual Masterpieces</h2>
+            </div>
+            <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+                <div class="gallery-item reveal-hidden"
+                    style="position: relative; overflow: hidden; border-radius: 20px; height: 400px;">
+                    <img src="images/show2.png" alt="Faucets"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                    <div class="gallery-overlay"
+                        style="position: absolute; inset: 0; background: linear-gradient(transparent, rgba(15, 23, 42, 0.9)); display: flex; flex-direction: column; justify-content: flex-end; padding: 40px; color: #fff;">
+                        <h3 style="color: #fff; margin-bottom: 10px;">Artistic Faucets</h3>
+                        <a href="faucets.html"
+                            style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">View
+                            Collection</a>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-hidden delay-1"
+                    style="position: relative; overflow: hidden; border-radius: 20px; height: 400px;">
+                    <img src="images/sink.png" alt="Ceramics"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                    <div class="gallery-overlay"
+                        style="position: absolute; inset: 0; background: linear-gradient(transparent, rgba(15, 23, 42, 0.9)); display: flex; flex-direction: column; justify-content: flex-end; padding: 40px; color: #fff;">
+                        <h3 style="color: #fff; margin-bottom: 10px;">Premium Ceramics</h3>
+                        <a href="ceramics.html"
+                            style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">View
+                            Collection</a>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-hidden delay-2"
+                    style="position: relative; overflow: hidden; border-radius: 20px; height: 400px;">
+                    <img src="images/bath.png" alt="Bathtubs"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition);">
+                    <div class="gallery-overlay"
+                        style="position: absolute; inset: 0; background: linear-gradient(transparent, rgba(15, 23, 42, 0.9)); display: flex; flex-direction: column; justify-content: flex-end; padding: 40px; color: #fff;">
+                        <h3 style="color: #fff; margin-bottom: 10px;">Wellness Tubs</h3>
+                        <a href="bathtubs.html"
+                            style="color: var(--secondary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">View
+                            Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section Teaser -->
-    <section class="about" id="about">
+    <section class="about" id="about" style="padding: 120px 0; background-color: var(--bg-card);">
         <div class="container about-container">
             <div class="about-text">
                 <h4 class="section-subtitle">THE JS TRADERS STANDARD</h4>
@@ -121,149 +170,98 @@
                     ultimate relaxation.</p>
                 <p>Through rigorous curation of premium designs, our sanitaryware transforms ordinary
                     washrooms into bespoke masterclass retreats.</p>
-                <a href="about.html" class="btn btn-secondary mt-4">Read Our Story</a>
+                <div class="feature-list"
+                    style="margin: 30px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="feature-item" style="display: flex; align-items: center; gap: 15px;">
+                        <i class="fa-solid fa-check" style="color: var(--secondary-color);"></i>
+                        <span>Bespoke Curation</span>
+                    </div>
+                    <div class="feature-item" style="display: flex; align-items: center; gap: 15px;">
+                        <i class="fa-solid fa-check" style="color: var(--secondary-color);"></i>
+                        <span>Premium Warranty</span>
+                    </div>
+                    <div class="feature-item" style="display: flex; align-items: center; gap: 15px;">
+                        <i class="fa-solid fa-check" style="color: var(--secondary-color);"></i>
+                        <span>Expert Installation</span>
+                    </div>
+                    <div class="feature-item" style="display: flex; align-items: center; gap: 15px;">
+                        <i class="fa-solid fa-check" style="color: var(--secondary-color);"></i>
+                        <span>Eco-Conscious</span>
+                    </div>
+                </div>
+                <a href="about.html" class="btn btn-secondary">Read Our Story</a>
             </div>
             <div class="about-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                    alt="Luxury Modern Bathroom" class="about-img">
-                <div class="experience-badge">
-                    <span class="years">Premium</span>
-                    <span class="text">Bespoke<br>Quality</span>
+                <img src="images/access.png" alt="Luxury Modern Bathroom" class="about-img shadow-premium">
+                <div class="experience-badge glass" style="border: 1px solid rgba(255,255,255,0.2);">
+                    <i class="fa-solid fa-shield-halved"
+                        style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 10px; display: block;"></i>
+                    <span class="years" style="font-size: 1.2rem;">ISO Certified</span>
+                    <span class="text">Global Quality<br>Standards</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Gallery Project -->
-    <section class="featured-project" id="gallery">
+
+
+
+    <!-- Discovery Process Section -->
+    <section class="process-section" style="padding: 120px 0; background-color: var(--bg-card);">
         <div class="container">
-            <div class="section-header text-center">
-                <h4 class="section-subtitle">BRAND PILLARS</h4>
-                <h2 class="section-title">Experience the Excellence</h2>
+            <div class="section-header text-center" style="margin-bottom: 80px;">
+                <h4 class="section-subtitle">THE DISCOVERY</h4>
+                <h2 class="section-title">Step-by-Step Experience</h2>
+                <p style="max-width: 600px; margin: 0 auto;">How we help you navigate the world of high-end sanitaryware
+                    to find your perfect sanctuary.</p>
             </div>
-        </div>
-        <div class="excellence-carousel-wrapper" style="margin-top: 50px;">
-            <div class="excellence-carousel-content">
-                <!-- Card 1 -->
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=800&q=80"
-                            alt="Geometric Perfection">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Geometric Perfection</h3>
-                        <p>Where precise engineering meets artistic vision to create fixtures that are as functional as
-                            they are beautiful.</p>
+            <div class="process-grid"
+                style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; position: relative;">
+                <div class="process-item text-center hover-lift"
+                    style="padding: 40px 20px; border-radius: 20px; background: #fff;">
+                    <div class="process-num"
+                        style="font-size: 4rem; font-family: var(--font-heading); color: rgba(92, 129, 229, 0.1); position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-weight: 900; z-index: 0;">
+                        01</div>
+                    <div style="position: relative; z-index: 1;">
+                        <h3 style="margin-bottom: 15px;">Consultation</h3>
+                        <p>We begin by understanding your architectural vision and spatial requirements.</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
-                            alt="Sustainable Luxury">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Sustainable Luxury</h3>
-                        <p>Our commitment to eco-conscious materials ensures high-end performance without environmental
-                            compromise.</p>
+                <div class="process-item text-center hover-lift"
+                    style="padding: 40px 20px; border-radius: 20px; background: #fff;">
+                    <div class="process-num"
+                        style="font-size: 4rem; font-family: var(--font-heading); color: rgba(92, 129, 229, 0.1); position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-weight: 900; z-index: 0;">
+                        02</div>
+                    <div style="position: relative; z-index: 1;">
+                        <h3 style="margin-bottom: 15px;">Curation</h3>
+                        <p>Our experts handpick a collection of fixtures that match your aesthetic preferences.</p>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80"
-                            alt="Smart Living">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Smart Living</h3>
-                        <p>Intelligent technology integrated into your sanctuary, providing touchless comfort and
-                            efficiency.</p>
+                <div class="process-item text-center hover-lift"
+                    style="padding: 40px 20px; border-radius: 20px; background: #fff;">
+                    <div class="process-num"
+                        style="font-size: 4rem; font-family: var(--font-heading); color: rgba(92, 129, 229, 0.1); position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-weight: 900; z-index: 0;">
+                        03</div>
+                    <div style="position: relative; z-index: 1;">
+                        <h3 style="margin-bottom: 15px;">Experience</h3>
+                        <p>Interact with our premium systems in a private, guided showroom walkthrough.</p>
                     </div>
                 </div>
-                <!-- Card 4 -->
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80"
-                            alt="Timeless Aesthetics">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Timeless Aesthetics</h3>
-                        <p>Curated designs that remain relevant for generations, transcending fleeting trends in
-                            bathroom architecture.</p>
-                    </div>
-                </div>
-                <!-- Card 5 -->
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
-                            alt="Architectural Flow">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Architectural Flow</h3>
-                        <p>Fixtures designed to complement the natural rhythm and space of modern high-end residences.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Duplicate Cards for Seamless Loop -->
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=800&q=80"
-                            alt="Geometric Perfection">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Geometric Perfection</h3>
-                        <p>Where precise engineering meets artistic vision to create fixtures that are as functional as
-                            they are beautiful.</p>
-                    </div>
-                </div>
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
-                            alt="Sustainable Luxury">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Sustainable Luxury</h3>
-                        <p>Our commitment to eco-conscious materials ensures high-end performance without environmental
-                            compromise.</p>
-                    </div>
-                </div>
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80"
-                            alt="Smart Living">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Smart Living</h3>
-                        <p>Intelligent technology integrated into your sanctuary, providing touchless comfort and
-                            efficiency.</p>
-                    </div>
-                </div>
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80"
-                            alt="Timeless Aesthetics">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Timeless Aesthetics</h3>
-                        <p>Curated designs that remain relevant for generations, transcending fleeting trends in
-                            bathroom architecture.</p>
-                    </div>
-                </div>
-                <div class="excellence-card">
-                    <div class="excellence-card-img">
-                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
-                            alt="Architectural Flow">
-                    </div>
-                    <div class="excellence-card-text">
-                        <h3>Architectural Flow</h3>
-                        <p>Fixtures designed to complement the natural rhythm and space of modern high-end residences.
-                        </p>
+                <div class="process-item text-center hover-lift"
+                    style="padding: 40px 20px; border-radius: 20px; background: #fff;">
+                    <div class="process-num"
+                        style="font-size: 4rem; font-family: var(--font-heading); color: rgba(92, 129, 229, 0.1); position: absolute; top: -10px; left: 50%; transform: translateX(-50%); font-weight: 900; z-index: 0;">
+                        04</div>
+                    <div style="position: relative; z-index: 1;">
+                        <h3 style="margin-bottom: 15px;">Installation</h3>
+                        <p>White-glove delivery and technical support to ensure flawless integration.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Call to Action -->
     <section class="cta">
