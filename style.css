@@ -307,7 +307,7 @@ ul {
 
 .btn-primary {
     background-color: var(--secondary-color);
-    color: #ffffff !important;
+    color: #c5c1c1 !important;
     box-shadow: 0 10px 25px rgba(92, 129, 229, 0.3);
 }
 
@@ -563,11 +563,11 @@ ul {
     align-items: center;
 }
 
-.about-container.reverse > .about-image-wrapper {
+.about-container.reverse>.about-image-wrapper {
     order: 2;
 }
 
-.about-container.reverse > .about-text {
+.about-container.reverse>.about-text {
     order: 1;
 }
 
@@ -854,17 +854,17 @@ ul {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 40px !important;
     }
-    
+
     .process-grid {
         grid-template-columns: 1fr !important;
         gap: 60px !important;
     }
-    
+
     .process-num {
         font-size: 3rem !important;
         top: -20px !important;
     }
-    
+
     .testimonial-content p {
         font-size: 1.4rem !important;
     }
@@ -1194,6 +1194,7 @@ ul {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(calc(-450px * 4 - 30px * 4));
     }
@@ -1204,11 +1205,18 @@ ul {
 }
 
 .excellence-card {
+    width: 450px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
 
 .excellence-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2);
 }
 
@@ -1304,11 +1312,16 @@ ul {
         gap: 50px !important;
     }
 
-    .featured-image, .about-image-wrapper {
+    .featured-image,
+    .about-image-wrapper {
         order: -1;
     }
 
-    .services-grid, .gallery-grid, .stats-grid, .process-grid, .specs-grid {
+    .services-grid,
+    .gallery-grid,
+    .stats-grid,
+    .process-grid,
+    .specs-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 30px !important;
     }
@@ -1363,6 +1376,13 @@ ul {
 
     .nav-links li a {
         font-size: 1.5rem;
+        color: #ffffff !important;
+    }
+
+    .dropdown-menu li a {
+        font-size: 1.1rem !important;
+        color: #ffffff !important;
+        padding: 10px 0 !important;
     }
 
     .menu-toggle {
@@ -1378,7 +1398,7 @@ ul {
     .bar {
         width: 100%;
         height: 3px;
-        background-color: var(--primary-color);
+        background-color: #ffffff;
         border-radius: 10px;
         transition: all 0.3s ease;
     }
@@ -1401,7 +1421,11 @@ ul {
         background-color: #fff;
     }
 
-    .services-grid, .gallery-grid, .process-grid, .stats-grid, .specs-grid {
+    .services-grid,
+    .gallery-grid,
+    .process-grid,
+    .stats-grid,
+    .specs-grid {
         grid-template-columns: 1fr !important;
     }
 
@@ -1436,13 +1460,22 @@ ul {
     }
 
     .excellence-card {
-        width: 300px !important;
-        height: 400px !important;
+        width: 320px !important;
+        height: 420px !important;
+    }
+
+    .card-overlay h3 {
+        font-size: 1.4rem !important;
     }
 
     @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-300px * 4 - 30px * 4)); }
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-320px * 4 - 30px * 4));
+        }
     }
 }
 
@@ -1486,8 +1519,25 @@ ul {
 
 html,
 body {
-    overflow-x: hidden;
-    width: 100%;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    touch-action: pan-y;
+    /* Prevent accidental horizontal swipes from triggering browser back/forward */
+}
+
+/* Ensure no element can cause horizontal overflow */
+* {
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Exception for marquee tracks which need to be wider than viewport but stay within hidden containers */
+.marquee-track,
+.marquee-wrapper {
+    max-width: none !important;
 }
 
 .collections-grid {
@@ -1552,7 +1602,7 @@ body {
     .collections-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .collection-card-image {
         height: 300px;
     }
